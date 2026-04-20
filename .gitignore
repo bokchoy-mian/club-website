@@ -1,0 +1,24 @@
+# 依赖目录
+node_modules/
+
+# 构建输出目录
+dist/
+
+# 本地环境配置文件
+.env
+.env.local
+.env.*.local
+
+# IDE 配置文件
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+
+# 日志文件
+npm-debug.log*
+yarn-debug.log*
+
+# 操作系统文件
+.DS_Store
+Thumbs.db
