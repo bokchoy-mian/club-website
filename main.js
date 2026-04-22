@@ -7,5 +7,9 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 // 引入 Bootstrap JS
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
+// 引入自定义Sass文件（替换原有的style.css）
+// Vite会自动识别.scss文件并调用Dart Sass进行编译
+import './src/styles/style.scss';
+
 // 你的其他代码可以写在这里
-console.log('项目初始化完成');
+console.log('Sass主题定制完成');

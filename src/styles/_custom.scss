@@ -1,0 +1,90 @@
+// ============================================
+// 任务4-4：Sass主题定制 - 自定义样式文件
+// ============================================
+// 通过 Bootstrap 组件类 + 少量自定义样式实现设计效果
+// 分类说明：
+//   [Bootstrap已有] - 扩展或覆盖Bootstrap已有样式
+//   [完全自定义]    - 全新创建的样式类
+
+// ============================================
+// 1. 卡片组件 (Card) - Bootstrap已有
+// ============================================
+// [Bootstrap已有] 卡片基础样式 + 悬停效果
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: $card-hover-shadow;
+    }
+}
+// [Bootstrap已有] 卡片标题区背景
+.card-header {
+    background: $card-cap-bg;
+}
+
+// ============================================
+// 2. 轮播组件 (Carousel)
+// ============================================
+// [Bootstrap已有] 轮播图文案容器 - 覆盖Bootstrap默认样式
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.3) 0%,
+        rgba(0, 0, 0, 0.5) 50%,
+        rgba(0, 0, 0, 0.7) 100%
+    );
+    padding-top: 5%;
+    border-radius: 3rem;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    max-width: 1000px;
+    height: 60%;
+    width: 90%;
+}
+
+// ============================================
+// 3. 新闻公告组件 - 完全自定义
+// ============================================
+
+// [完全自定义] 新闻日期大数字
+.news-date-day {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $primary;
+    line-height: 1;
+}
+// [完全自定义] 新闻年份
+.news-date-year {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+// ============================================
+// 4. 社团巡礼Tab导航 - Bootstrap已有
+// ============================================
+// [Bootstrap已有] Tab导航链接样式（使用更具体的选择器避免被.navbar样式覆盖）
+.nav-link {
+    padding: 0.65rem 1.75rem;
+    font-weight: 600;
+    margin: 0 0.3rem;
+    border-radius: 0.375rem;
+    font-size: $navbar-nav-link-font-size;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: rgba($primary, 0.1);
+        border-color: $primary;
+        color: $primary;
+    }
+
+    &.active {
+        background-color: $primary;
+        border-color: $primary;
+        color: #ffffff;
+    }
+}
+
