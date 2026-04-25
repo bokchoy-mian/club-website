@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校园社团官网</title>
+  <script type="module" crossorigin src="/club-website/assets/main-9zCgxcEp.js"></script>
+  <link rel="stylesheet" crossorigin href="/club-website/assets/main-CdD_9y_O.css">
+</head>
+
+<body>
+    <!-- 模块1：导航栏 -->
+    <!-- 使用 navbar-dark bg-dark 实现深色背景，使用 ms-auto 让导航标签靠右 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <span class="badge bg-primary rounded-circle me-2 p-2">
+                    <i class="bi bi-people-fill"></i>
+                </span>
+                <span class="fw-bold">湖职社团平台</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="切换导航菜单">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">
+                            <i class="bi bi-house-door me-1"></i>首页
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active"  href="news.html">
+                            <i class="bi bi-newspaper me-1"></i>新闻
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#clubs-section">
+                            <i class="bi bi-grid-3x3-gap me-1"></i>社团
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#activities-section">
+                            <i class="bi bi-calendar-event me-1"></i>活动
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-info-circle me-1"></i>关于我们
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-building me-2"></i>学校简介</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-person-badge me-2"></i>团队介绍</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-envelope me-2"></i>联系我们</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-clock-history me-2"></i>发展历程</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#site-footer">
+                            <i class="bi bi-telephone me-1"></i>联系方式
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="d-flex align-items-center ms-lg-3">
+                    <a class="btn btn-primary text-nowrap" href="#">
+                        <i class="bi bi-box-arrow-in-right me-1"></i>登录 / 注册
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- 新闻列表内容区域 -->
+    <main class="container my-5 py-5">
+        <!-- 页面标题区域 -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1 class="mb-0">
+                <i class="bi bi-newspaper me-2 text-primary"></i>新闻公告
+            </h1>
+            <span class="badge bg-primary rounded-pill">共12条</span>
+        </div>
+
+        <!-- 搜索筛选区域 -->
+        <div class="card mb-4 border-0 shadow-sm">
+            <div class="card-body">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" placeholder="搜索新闻标题...">
+                    </div>
+                    <div class="col-md-3">
+                        <select class="form-select">
+                            <option selected>全部类型</option>
+                            <option value="1">通知公告</option>
+                            <option value="2">社团动态</option>
+                            <option value="3">活动报道</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-primary w-100">
+                            <i class="bi bi-search me-1"></i>搜索
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 新闻列表区域 -->
+        <div class="row g-4" id="news-list">
+            <!-- 新闻条目1 -->
+            <div class="col-md-6 col-lg-4">
+                <article class="card h-100 border-0 shadow-sm news-card">
+                    <div class="card-header bg-primary text-white">
+                        <span class="badge bg-light text-primary me-2">通知公告</span>
+                        <small>2025-02-12</small>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="#" class="text-decoration-none text-dark stretched-link">
+                                关于开展2024-2025学年春季学期学生社团注册的通知
+                            </a>
+                        </h5>
+                        <p class="card-text text-muted small">
+                            根据《北京大学学生社团管理办法》相关规定，校团委定于即日起至2月20日开展本学期学生社团登记注册工作...
+                        </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0">
+                        <small class="text-muted">
+                            <i class="bi bi-person me-1"></i>校团委
+                            <i class="bi bi-eye ms-3 me-1"></i>1234次浏览
+                        </small>
+                    </div>
+                </article>
+            </div>
+
+            <!-- 新闻条目2 -->
+            <div class="col-md-6 col-lg-4">
+                <article class="card h-100 border-0 shadow-sm news-card">
+                    <div class="card-header bg-success text-white">
+                        <span class="badge bg-light text-success me-2">社团动态</span>
+                        <small>2024-11-01</small>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="#" class="text-decoration-none text-dark stretched-link">
+                                "社团风向标"北京大学2022-2023学年度优秀学生社团评选表彰大会举行
+                            </a>
+                        </h5>
+                        <p class="card-text text-muted small">
+                            为全面贯彻党的二十大精神，扎实推进"五育并举"，进一步发挥优秀学生社团引领示范作用...
+                        </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0">
+                        <small class="text-muted">
+                            <i class="bi bi-person me-1"></i>社团联合会
+                            <i class="bi bi-eye ms-3 me-1"></i>2345次浏览
+                        </small>
+                    </div>
+                </article>
+            </div>
+
+            <!-- 新闻条目3 -->
+            <div class="col-md-6 col-lg-4">
+                <article class="card h-100 border-0 shadow-sm news-card">
+                    <div class="card-header bg-info text-white">
+                        <span class="badge bg-light text-info me-2">活动报道</span>
+                        <small>2024-10-30</small>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="#" class="text-decoration-none text-dark stretched-link">
+                                "百团擘画新秋时"——北京大学2024-2025秋季学期社团文化节暨集体招新火热开启
+                            </a>
+                        </h5>
+                        <p class="card-text text-muted small">
+                            秋高气爽满目新，正是百团迎新时。2024年9月20日至9月21日，北京大学2024-2025秋季学期社团集体招新活动于燕园校区举行...
+                        </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0">
+                        <small class="text-muted">
+                            <i class="bi bi-person me-1"></i>活动策划部
+                            <i class="bi bi-eye ms-3 me-1"></i>3456次浏览
+                        </small>
+                    </div>
+                </article>
+            </div>
+
+            <!-- 新闻条目4 -->
+            <div class="col-md-6 col-lg-4">
+                <article class="card h-100 border-0 shadow-sm news-card">
+                    <div class="card-header bg-warning text-dark">
+                        <span class="badge bg-light text-warning me-2">通知公告</span>
+                        <small>2024-11-01</small>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="#" class="text-decoration-none text-dark stretched-link">
+                                北京大学2024年学生社团发展论坛举行
+                            </a>
+                        </h5>
+                        <p class="card-text text-muted small">
+                            强化育人协作，共话社团发展。为探讨社团发展管理经验，加强社团间友好交流...
+                        </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0">
+                        <small class="text-muted">
+                            <i class="bi bi-person me-1"></i>社团管理部
+                            <i class="bi bi-eye ms-3 me-1"></i>1567次浏览
+                        </small>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <!-- 分页导航 -->
+        <nav aria-label="新闻分页" class="mt-5">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">上一页</a>
+                </li>
+                <li class="page-item active" aria-current="page">
+                    <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">下一页</a>
+                </li>
+            </ul>
+        </nav>
+    </main>
+
+    <!-- 模块7：页脚 -->
+    <footer id="site-footer" class="bg-dark text-white py-5">
+        <div class="container">
+            <!-- 主要内容区域 -->
+            <div class="row g-4 mb-4">
+                <!-- 第一列：学校简介 -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="footer-section">
+                        <h5 class="fw-bold mb-3">
+                            <i class="bi bi-school me-2"></i>湖州职业技术学院
+                        </h5>
+                        <p class="text-white-50 small mb-0">
+                            湖州职业技术学院是浙江省湖州市一所全日制公办高职院校，致力于培养高素质技术技能型人才。学校社团文化丰富多彩，为学生提供广阔的发展平台。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 第二列：快速链接 -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="footer-section">
+                        <h6 class="fw-bold mb-3">快速链接</h6>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2"><a href="#news-section" class="text-white-50 text-decoration-none">社团招新</a>
+                            </li>
+                            <li class="mb-2"><a href="#activities-section"
+                                    class="text-white-50 text-decoration-none">活动报名</a></li>
+                            <li class="mb-2"><a href="#news-section" class="text-white-50 text-decoration-none">新闻公告</a>
+                            </li>
+                            <li class="mb-2"><a href="#clubs-section"
+                                    class="text-white-50 text-decoration-none">社团巡礼</a></li>
+                            <li class="mb-2"><a href="#gallery-section"
+                                    class="text-white-50 text-decoration-none">风采展示</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 第三列：联系方式 -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="footer-section">
+                        <h6 class="fw-bold mb-3">联系方式</h6>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2">
+                                <i class="bi bi-geo-alt me-2"></i>湖州市吴兴区学府路299号
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-telephone me-2"></i>0572-1234567
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-envelope me-2"></i>stu@hutc.edu.cn
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-chat-dots me-2"></i>QQ群：123456789
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 第四列：二维码 -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="footer-section text-center text-md-start">
+                        <h6 class="fw-bold mb-3">关注我们</h6>
+                        <div class="mb-3" style="width: 120px; height: 120px; background-color: #fff; margin: 0 auto;">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Crect fill='%23333' width='120' height='120'/%3E%3Ctext x='50%25' y='50%25' fill='%23fff' font-size='12' text-anchor='middle' dy='.3em'%3E二维码区域%3C/text%3E%3C/svg%3E"
+                                alt="微信公众号" class="img-fluid rounded">
+                        </div>
+                        <p class="text-white-50 small mb-0">扫码关注公众号</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 版权声明 -->
+            <hr class="border-secondary my-4">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                        <p class="text-white-50 small mb-2 mb-md-0">
+                            版权所有 © 2024 湖州职业技术学院学生社团联合会
+                        </p>
+                        <p class="text-white-50 small mb-0">
+                            技术支持：信息技术学院
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- JavaScript主入口文件 -->
+</body>
+
+</html>

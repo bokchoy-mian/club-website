@@ -13,31 +13,23 @@ $success: #198754;
 $info: #0dcaf0;
 $warning: #ffc107;
 $danger: #dc3545;
-
 // 深色背景（用于导航栏、页脚区域）
 $dark: #1a1a1a;
-
 // 浅色背景
 $light: #f8f9fa;
-
 // ============================================
 // 2. 卡片组件变量 (Bootstrap已有变量)
 // ============================================
 // 卡片圆角：从4px改为12px，呈现更圆润的视觉效果
 $card-border-radius: 12px;
-
 // 卡片边框颜色：使用红色调的浅色边框
 $card-border-color: rgba($primary, 0.15);
-
 // 卡片边框宽度
 $card-border-width: 3px;
-
 // 卡片标题区背景色
 $card-cap-bg: rgba($primary, 0.05);
-
 // 卡片标题区底部边框宽度
 $card-cap-border-width: 1px;
-
 // 卡片标题区底部边框颜色
 $card-cap-border-color: rgba($primary, 0.1);
 
@@ -46,7 +38,6 @@ $card-cap-border-color: rgba($primary, 0.1);
 // ============================================
 // 按钮圆角
 $btn-border-radius: 8px;
-
 // ============================================
 // 4. 导航栏组件变量 (Bootstrap已有变量)
 // ============================================
@@ -54,37 +45,29 @@ $navbar-dark-color: rgba(255, 255, 255, 0.9);
 $navbar-dark-hover-color: #ffffff;
 $navbar-dark-active-color: #ffffff;
 $navbar-dark-disabled-color: rgba(255, 255, 255, 0.5);
-
 // 导航栏高度
 $navbar-padding-y: 1rem;
-
 // 导航链接间距
 $nav-link-padding-x: 1.5rem;
 $nav-link-padding-y: 0.8rem;
-
 // 导航链接字体大小
 $navbar-nav-link-font-size: 1.05rem;
-
 // ============================================
 // 5. 下拉菜单组件变量 (Bootstrap已有变量)
 // ============================================
 $dropdown-link-hover-bg: rgba($primary, 0.1);
 $dropdown-link-active-bg: $primary;
 $dropdown-link-active-color: #ffffff;
-
 // ============================================
 // 6. 完全自定义新变量 (Bootstrap没有的变量)
 // ============================================
 // 卡片悬停时的阴影效果
 $card-hover-shadow: 0 8px 24px rgba($primary, 0.2);
-
 // 圆角规范
 $radius-sm: 6px;
 $radius-md: 12px;
 $radius-lg: 25px;
-
 // 导航栏active状态高亮背景色
 $navbar-active-bg: $primary;
-
 // 导航栏hover状态高亮背景色
 $navbar-hover-bg: rgba($primary, 0.2);
